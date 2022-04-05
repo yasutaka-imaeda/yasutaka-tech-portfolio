@@ -8,9 +8,9 @@ const Main: React.FC = () => {
       <div className={styles.header}>
         <Header />
       </div>
-      <div className={styles.root}>
-        <p className={styles.maintitle}>Yasutaka.imaeda</p>
-        <p className={styles.subtitle}>見習いエンジニアのポートフォリオ</p>
+      <div className={styles.mainWrapper}>
+        <p className={styles.maintitle}>Yasutaka Imaeda's Portfolio</p>
+        <p className={styles.subtitle}>フロントエンドエンジニア</p>
       </div>
     </div>
   );
