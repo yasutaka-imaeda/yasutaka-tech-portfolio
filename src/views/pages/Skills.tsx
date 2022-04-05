@@ -13,6 +13,8 @@ const Skills: React.FC = () => {
     { skill: "Typescript", points: 3, year: 1 },
     { skill: "Amplify", points: 2, year: 1 },
     { skill: "GraphQL", points: 2, year: 1 },
+    { skill: "Jest", points: 1, year: 1 },
+    { skill: "cypress", points: 1.5, year: 1 },
   ];
   return (
     <div className={styles.root}>
