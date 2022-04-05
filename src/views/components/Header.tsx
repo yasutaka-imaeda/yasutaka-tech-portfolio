@@ -40,6 +40,14 @@ const Header: React.FC = () => {
           >
             Skill
           </Button>
+          <Button
+            color="inherit"
+            component={Link}
+            to={Path.works}
+            className={styles.btn}
+          >
+            Works
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>
