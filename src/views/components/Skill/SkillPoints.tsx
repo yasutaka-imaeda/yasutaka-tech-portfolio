@@ -15,12 +15,15 @@ const SkillPoints: React.FC<Props> = ({ skillInfo }) => {
     <div className={styles.root}>
       <div className={styles.skillWrapper}>
         <div className={styles.skillName}>{skillInfo.skill}</div>
-        <div className={styles.experienceYear}>経験年数：{skillInfo.year}</div>
+        <div className={styles.experienceYear}>
+          経験年数：{skillInfo.year}年
+        </div>
         <Rating
           name={skillInfo.skill}
           value={skillInfo.points}
           readOnly
           size="large"
+          precision={0.5}
         />
       </div>
     </div>

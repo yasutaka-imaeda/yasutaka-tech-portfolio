@@ -4,7 +4,16 @@ import Header from "../components/Header";
 import SkillPoints from "../components/Skill/SkillPoints";
 
 const Skills: React.FC = () => {
-  const skillSet = {skill:"React",points: 4, year:2}
+  const skillSet = [
+    { skill: "HTML", points: 4, year: 2 },
+    { skill: "CSS", points: 4, year: 2 },
+    { skill: "javascript", points: 4, year: 2 },
+    { skill: "React", points: 4.5, year: 2 },
+    { skill: "Redux-tool-kit", points: 4.5, year: 2 },
+    { skill: "Typescript", points: 3, year: 1 },
+    { skill: "Amplify", points: 2, year: 1 },
+    { skill: "GraphQL", points: 2, year: 1 },
+  ];
   return (
     <div className={styles.root}>
       <div className={styles.header}>
@@ -12,7 +21,9 @@ const Skills: React.FC = () => {
       </div>
       <div className={styles.skillTitle}>Skill</div>
       <div className={styles.skillWrapper}>
-        <SkillPoints  skillInfo = {skillSet} />
+        {skillSet.map((item: any) => {
+          return <SkillPoints skillInfo={item} />;
+        })}
       </div>
     </div>
   );
