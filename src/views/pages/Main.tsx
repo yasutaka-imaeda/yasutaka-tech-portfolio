@@ -8,6 +8,10 @@ const Main: React.FC = () => {
       <div className={styles.header}>
         <Header />
       </div>
+      <div className={styles.root}>
+        <p className={styles.maintitle}>Yasutaka.imaeda</p>
+        <p className={styles.subtitle}>見習いエンジニアのポートフォリオ</p>
+      </div>
     </div>
   );
 };

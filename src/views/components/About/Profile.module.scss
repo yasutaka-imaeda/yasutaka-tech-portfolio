@@ -1,0 +1,9 @@
+.root {
+  display: flex;
+  .profileImg {
+    background-image: url("../../../img/profile.png");
+    height: 500px;
+    width: 500px;
+    margin-right: 40px;
+  }
+}
