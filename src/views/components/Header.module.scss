@@ -1,0 +1,17 @@
+.root {
+  .bar {
+    .topIcon {
+      background-image: url("../../img/icon.png");
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+    }
+    .btn {
+      color: white;
+      font-weight: bold;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 18px;
+      margin-right: 40px;
+    }
+  }
+}
