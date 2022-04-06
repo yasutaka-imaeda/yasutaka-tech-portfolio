@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./WorksComponents.module.scss";
 import WorksInfo from "./WorksInfo";
 import WorksTitle from "./WorksTitle";
-import GolfAppImg from "../../../img/GolfAppIMG.png"
-import WeatherAppImg from "../../../img/WetherAppIMG.png"
-import PortFolioImg from "../../../img/PortFolioImg.png"
+import GolfAppImg from "../../../img/GolfAppIMG.png";
+import WeatherAppImg from "../../../img/WetherAppIMG.png";
+import PortFolioImg from "../../../img/PortfolioImg.png";
 
 const WorksComponents: React.FC = () => {
   const appInfo = [
