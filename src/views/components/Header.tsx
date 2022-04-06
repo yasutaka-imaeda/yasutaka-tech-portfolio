@@ -48,6 +48,14 @@ const Header: React.FC = () => {
           >
             Works
           </Button>
+          <Button
+            color="inherit"
+            component={Link}
+            to={Path.contacts}
+            className={styles.btn}
+          >
+            Contact
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>

@@ -1,0 +1,58 @@
+.root {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 50%;
+  margin: 0 25%;
+
+  .inputname > p {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .contact-name {
+    margin-top: 0;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  }
+
+  .inputemail > p {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .contact-mail {
+    margin-top: 0;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  }
+
+  .inputtext > p {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .contactmessage {
+    margin-top: 0;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+  }
+
+  .btn {
+    cursor: pointer;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      position: relative;
+      top: 3px;
+    }
+  }
+}
