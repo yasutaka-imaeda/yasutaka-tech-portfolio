@@ -4,6 +4,7 @@ import WorksInfo from "./WorksInfo";
 import WorksTitle from "./WorksTitle";
 import GolfAppImg from "../../../img/GolfAppIMG.png"
 import WeatherAppImg from "../../../img/WetherAppIMG.png"
+import PortFolioImg from "../../../img/PortFolioImg.png"
 
 const WorksComponents: React.FC = () => {
   const appInfo = [
@@ -13,7 +14,7 @@ const WorksComponents: React.FC = () => {
       skill: ["HTML", "CSS", "React", "Typescript", "redux-toolkit", "amplify"],
       isPortFolio: true,
       url: "https://github.com/yasutaka-imaeda/yasutaka-tech-portfolio",
-      pictureUrl: "",
+      pictureUrl: PortFolioImg,
     },
     {
       discription: "天気検索アプリです。",
