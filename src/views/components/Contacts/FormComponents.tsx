@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import styles from "./FormComponents.module.scss";
 import { init, sendForm, send } from "emailjs-com";
 import { TextField } from "@mui/material";
+import { useAppDispatch, useAppSelector } from "../../../app/hooks";
+import { selectModal, setIsModalopen } from "../../../app/modalSlice";
+import ModalComponents from "../Modal/ModalComponents";
 
 const FormComponents: React.FC = () => {
+  const isModalOpen = useAppSelector(selectModal);
+  const dispatch = useAppDispatch();
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
@@ -48,12 +53,14 @@ const FormComponents: React.FC = () => {
     const textValue: any = document.getElementById("text");
     textValue.value = "";
     console.log("push submit");
+    dispatch(setIsModalopen(true));
     sendEmail();
   };
 
   return (
     <form onSubmit={onSubmit}>
       <div className={styles.root}>
+        <ModalComponents isModalOpen={isModalOpen} />
         <div className={styles.inputname}>
           <p>お名前</p>
           <TextField
