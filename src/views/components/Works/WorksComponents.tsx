@@ -2,32 +2,42 @@ import React from "react";
 import styles from "./WorksComponents.module.scss";
 import WorksInfo from "./WorksInfo";
 import WorksTitle from "./WorksTitle";
+import GolfAppImg from "../../../img/GolfAppIMG.png"
+import WeatherAppImg from "../../../img/WetherAppIMG.png"
 
 const WorksComponents: React.FC = () => {
   const appInfo = [
     {
       discription: "このポートフォリオです。",
-      func: ["機能１", "機能２"],
-      skill: ["技術１", "技術２"],
-      isPortFolio: false,
-      url: "",
+      func: ["ホーム画面", "概要", "作成物", "問い合わせ"],
+      skill: ["HTML", "CSS", "React", "Typescript", "redux-toolkit", "amplify"],
+      isPortFolio: true,
+      url: "https://github.com/yasutaka-imaeda/yasutaka-tech-portfolio",
       pictureUrl: "",
     },
     {
       discription: "天気検索アプリです。",
-      func: ["機能１", "機能２"],
-      skill: ["技術１", "技術２"],
+      func: ["天気検索(風速等)", "地図表示", "時間ごとの気温推移", "週間天気"],
+      skill: ["HTML", "CSS", "React", "Typescript", "redux-toolkit", "amplify"],
       isPortFolio: false,
-      url: "",
-      pictureUrl: "",
+      url: "https://main.d1iahj9adnicks.amplifyapp.com/",
+      pictureUrl: WeatherAppImg,
     },
     {
       discription: "ゴルフスコア管理アプリです。",
-      func: ["機能１", "機能２"],
-      skill: ["技術１", "技術２"],
+      func: ["認証機能", "スコア入力", "スコア編集/削除", "スコアグラフ分析"],
+      skill: [
+        "HTML",
+        "CSS",
+        "React",
+        "Typescript",
+        "redux-toolkit",
+        "amplify",
+        "graphQL",
+      ],
       isPortFolio: false,
-      url: "",
-      pictureUrl: "",
+      url: "https://main.d2ouqtaygazu8w.amplifyapp.com/",
+      pictureUrl: GolfAppImg,
     },
   ];
 
